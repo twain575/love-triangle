@@ -12,7 +12,7 @@ module.exports = function getLoveTrianglesCount(preferences = []) {
     let spichoneeB = preferences[spichoneeA]; // 20
     let spichoneeC = preferences[spichoneeB]; // 1
 
-    if (i === spichoneeC) {
+    if (i === spichoneeC && spichoneeA != spichoneeC) {
       triangle ++
     }
   }
